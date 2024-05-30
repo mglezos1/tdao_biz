@@ -1,0 +1,11 @@
+/* src/App.css */
+.App {
+  text-align: center;
+  padding: 50px; /* Add padding to the top */
+}
+
+.page-heading {
+  font-size: 2.5em;
+  margin-bottom: 20px; /* Space between heading and form */
+  color: #e0e0e0;
+}
