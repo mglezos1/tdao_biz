@@ -1,0 +1,92 @@
+/* src/components/MintForm.css */
+body {
+    background-color: #121212; /* Dark background color */
+    color: #e0e0e0; /* Light text color */
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Align items to the start */
+    height: 100vh;
+  }
+  
+  .mint-form-container {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background: linear-gradient(135deg, #6a0dad 30%, #4b0082 70%); /* Purple and blue gradient */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  }
+  
+  .mint-form-heading {
+    font-size: 20px; /* Reduced font size */
+    margin-bottom: 15px; /* Reduced margin */
+    color: #e0e0e0; /* Light text color */
+    text-align: center;
+  }
+  
+  .connect-metamask-button {
+    background-color: #3b82f6; /* Blue button color */
+    color: #e0e0e0; /* Light text color */
+    border: none;
+    padding: 8px 16px; /* Reduced padding */
+    font-size: 14px; /* Reduced font size */
+    border-radius: 4px;
+    cursor: pointer;
+    margin-bottom: 15px; /* Reduced margin */
+    width: 100%;
+  }
+  
+  .connect-metamask-button:hover {
+    background-color: #2563eb; /* Darker blue for hover effect */
+  }
+  
+  .mint-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-group {
+    margin-bottom: 15px; /* Reduced margin */
+  }
+  
+  .form-label {
+    font-size: 14px; /* Reduced font size */
+    margin-bottom: 5px;
+    color: #e0e0e0; /* Light text color */
+  }
+  
+  .form-input,
+  .form-textarea {
+    width: 100%;
+    padding: 8px; /* Reduced padding */
+    font-size: 14px; /* Reduced font size */
+    border: 1px solid #4b5563; /* Darker border */
+    border-radius: 4px;
+    background-color: #1f2937; /* Dark input background */
+    color: #e0e0e0; /* Light text color */
+  }
+  
+  .form-input::placeholder,
+  .form-textarea::placeholder {
+    color: #9ca3af; /* Lighter placeholder text color */
+  }
+  
+  .mint-button {
+    background-color: #3b82f6; /* Blue button color */
+    color: #e0e0e0; /* Light text color */
+    border: none;
+    padding: 8px 16px; /* Reduced padding */
+    font-size: 14px; /* Reduced font size */
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .mint-button:hover {
+    background-color: #2563eb; /* Darker blue for hover effect */
+  }
+  
+  small {
+    color: #9ca3af; /* Lighter text color for small text */
+  }
+  
