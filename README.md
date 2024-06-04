@@ -8,4 +8,4 @@ The owner of the business would fill out their Business name, bio, contact numbe
 
 Holders of the NFT would then have access to the Holders page that would display all of that information for holders to contact each other to list the page
 
-Note: all of this is a front end demo, there is no smart contract, the minting button does not work, the holders page is not gatekept nor are the holders displayed
+Note: all of this is a front end demo, the smart contract is a prototype and not connected to the page, the minting button does not work, the holders page is not gatekept nor are the holders displayed
