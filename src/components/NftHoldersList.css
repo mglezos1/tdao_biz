@@ -1,0 +1,46 @@
+/* src/components/NftHoldersList.css */
+.holders-list-container {
+  padding: 20px;
+  background-color: #121212; /* Dark background color */
+  color: #e0e0e0; /* Light text color */
+}
+
+.holders-list-heading {
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: #e0e0e0;
+  text-align: center;
+}
+
+.holders-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.holder-card {
+  background-color: #2a2a2e; /* Dark purple background */
+  padding: 15px;
+  border-radius: 8px;
+  width: 200px;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.holder-image {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+}
+
+.holder-business-name {
+  font-size: 1.2em;
+  margin: 10px 0;
+}
+
+.holder-bio,
+.holder-contact {
+  font-size: 0.9em;
+  color: #9ca3af;
+}
