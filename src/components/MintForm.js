@@ -1,8 +1,8 @@
 // src/components/MintForm.js
 import React, { useState } from 'react';
-import './MintForm.css'; // Import CSS file for MintForm styling
+import './MintForm.css';
 
-const MintForm = () => {
+const MintForm = ({ addHolder }) => {
   const [formData, setFormData] = useState({
     businessName: '',
     bio: '',
@@ -20,15 +20,13 @@ const MintForm = () => {
   const handleImageChange = (e) => {
     setFormData({
       ...formData,
-      profileImage: e.target.files[0],
+      profileImage: URL.createObjectURL(e.target.files[0]),
     });
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Handle form submission here, e.g., send data to backend or IPFS
-    console.log(formData);
-    // Reset form fields
+    addHolder(formData);
     setFormData({
       businessName: '',
       bio: '',
@@ -38,11 +36,8 @@ const MintForm = () => {
   };
 
   const connectMetaMask = async () => {
-    // Your MetaMask connection logic here
     try {
-      // Check if MetaMask is installed
       if (window.ethereum) {
-        // Request user permission to connect
         await window.ethereum.request({ method: 'eth_requestAccounts' });
         console.log('Connected to MetaMask');
       } else {
